@@ -171,7 +171,8 @@ public class MyFlappy implements ActionListener, KeyListener{
 			int speed = 8;
 			
 			//Geschwindigkeitserhöhung bei Erreichen eines bestimmten Scores -> Ausgabe der Erhöhung als String im Ausgabefenster durch speedUp
-			//INDIVIDUALISIERUNG: Hier kann der Speed der Säulen verändert werden (nähere Informationen: siehe Benutzerhandbuch)
+			//INDIVIDUALISIERUNG: Hier kann der Speed der Säulen verändert werden 
+			//(nähere Informationen: siehe Benutzerhandbuch)
 			for (int i = 0; i < Variablen.columns.size(); i++) {
 			
 				if (Variablen.score < 20) {
@@ -207,7 +208,6 @@ public class MyFlappy implements ActionListener, KeyListener{
 					speed = 15;
 					column.x -= speed;
 				}
-				
 			}
 			
 			//Fallgeschwindigkeit wird beschleunigt			
@@ -238,7 +238,8 @@ public class MyFlappy implements ActionListener, KeyListener{
 				//Score erhöhen, wenn Spielfigur unter der oberen Säule ist
 				if (!Variablen.gameOver && column.y== 0 && Variablen.birdx + 50 / 2 > column.x + column.width / 2 - 5 && Variablen.birdx + 50/ 2 < column.x + column.width / 2 + 5) {  //Hälfte Speed
 					Variablen.score++;
-					//INDIVIDUALISIERUNG: Hier kann der Score-Sound verändert werden (nähere Informationen: siehe Benutzerhandbuch)
+					//INDIVIDUALISIERUNG: Hier kann der Score-Sound verändert werden 
+					//(nähere Informationen: siehe Benutzerhandbuch)
 					Musik.music("audio/bing.wav");
 				}
 				
@@ -345,7 +346,8 @@ public class MyFlappy implements ActionListener, KeyListener{
 		if (e.getKeyCode() == KeyEvent.VK_SPACE) {
 			if (Variablen.started) {
 			jump();
-			//INDIVIDUALISIERUNG: Hier kann der Flügelschlag-Sound verändert werden (nähere Informationen: siehe Benutzerhandbuch)
+			//INDIVIDUALISIERUNG: Hier kann der Flügelschlag-Sound verändert werden 
+			//(nähere Informationen: siehe Benutzerhandbuch)
 			Musik.music("audio/flap.wav"); 
 			}
 		}

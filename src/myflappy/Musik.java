@@ -25,6 +25,8 @@ public class Musik {
 			/**
 			 * Methode run definiert das Einlesen und Abspielen des Musikclips (sowie die Anzahl des Abspielens) 
 			 */
+			//INDIVIDUALISIERUNG: Hier können die Soundeffekte verändert werden
+			//(nähere Informationen: siehe Benutzerhandbuch)
 			public void run() {
 				//while (true) {
 					try {
@@ -34,7 +36,7 @@ public class Musik {
 						AudioInputStream inputStream = AudioSystem.getAudioInputStream(new File (trackname));
 						//öffnet den inputStream
 						clip.open(inputStream);
-						//spielt den Clip einmal ab (Loop 0 = keine Wiederholung, Loop 1 = eine Wiederholung also zwei mal abspielen)
+						//Loop 0 = keine Wiederholung, Loop 1 = eine Wiederholung also zwei mal abspielen
 						clip.loop(0);
 						//clip.loop(Clip.LOOP_CONTINUOUSLY);
 						Thread.sleep(clip.getMicrosecondLength()/1000);						

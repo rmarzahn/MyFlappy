@@ -50,6 +50,8 @@ public class Menu {
 		//definiert eine Schriftart und -größe und zeichnet die Beschriftung der Menübutton
 		Font fnt1 = new Font("arial", Font.BOLD, 40);
 		g.setFont(fnt1);
+		//INDIVIDUALISIERUNG: Anpassung der Bezeichnungen der Spielwelten
+		//(nähere Informationen: siehe Benutzerhandbuch)
 		g.drawString("Water World", playButtonW1.x+30, playButtonW1.y+55);
 		g.drawString("Classic World", playButtonW2.x+15, playButtonW2.y+55);
 		g.drawString("Space World", playButtonW3.x+30, playButtonW3.y+55);

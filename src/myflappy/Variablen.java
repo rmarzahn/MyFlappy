@@ -33,7 +33,7 @@ public class Variablen {
 	//yMotion legt die Bewegung der Spielfigur in yRichtung pro Frame fest
 	public static int yMotion;
 	// Score, Geschwindigkeit und Weltvariable wird definiert
-	public static int score = 0;
+	public static int score = 18;
 	public static int speed = 8;
 	public static int welt = 0;
 	
