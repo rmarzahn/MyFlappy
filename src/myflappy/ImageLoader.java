@@ -24,9 +24,11 @@ public class ImageLoader {
 	 */
 	public ImageLoader() {
 		try {
-			//INDIVIDUALISIERUNG: Hier kann der Hintergrund der ersten Welt verändert werden (nähere Informationen: siehe Benutzerhandbuch)
+			//INDIVIDUALISIERUNG: Hier kann der Hintergrund 
+			//der ersten Welt verändert werden (nähere Informationen: siehe Benutzerhandbuch)
 			img1 = ImageIO.read(new File("res/water.jpg"));
-			//INDIVIDUALISIERUNG: Hier kann die Spielfigur der ersten Welt verändert werden (nähere Informationen: siehe Benutzerhandbuch)
+			//INDIVIDUALISIERUNG: Hier kann die Spielfigur 
+			//der ersten Welt verändert werden (nähere Informationen: siehe Benutzerhandbuch)
 			ibird = ImageIO.read(new File("res/bird.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -34,18 +36,22 @@ public class ImageLoader {
 		}			
 		
 		try {
-			//INDIVIDUALISIERUNG: Hier kann der Hintergrund der zweiten Welt verändert werden (nähere Informationen: siehe Benutzerhandbuch)
+			//INDIVIDUALISIERUNG: Hier kann der Hintergrund 
+			//der zweiten Welt verändert werden (nähere Informationen: siehe Benutzerhandbuch)
 			img2 = ImageIO.read(new File("res/bg.png"));
-			//INDIVIDUALISIERUNG: Hier kann die Spielfigur der zweiten Welt verändert werden (nähere Informationen: siehe Benutzerhandbuch)
+			//INDIVIDUALISIERUNG: Hier kann die Spielfigur
+			//der zweiten Welt verändert werden (nähere Informationen: siehe Benutzerhandbuch)
 			ibird = ImageIO.read(new File("res/bird.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 			System.out.println("Bilder können nicht geladen werden!");
 		}
 		try {
-			//INDIVIDUALISIERUNG: Hier kann der Hintergrund der dritten Welt verändert werden (nähere Informationen: siehe Benutzerhandbuch)
+			//INDIVIDUALISIERUNG: Hier kann der Hintergrund 
+			//der dritten Welt verändert werden (nähere Informationen: siehe Benutzerhandbuch)
 			img3 = ImageIO.read(new File("res/space2.jpeg"));
-			//INDIVIDUALISIERUNG: Hier kann die Spielfigur der dritten Welt verändert werden (nähere Informationen: siehe Benutzerhandbuch)
+			//INDIVIDUALISIERUNG: Hier kann die Spielfigur 
+			//der dritten Welt verändert werden (nähere Informationen: siehe Benutzerhandbuch)
 			ibird = ImageIO.read(new File("res/bird.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
