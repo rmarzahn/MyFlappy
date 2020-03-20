@@ -334,7 +334,7 @@ public class MyFlappy implements ActionListener, KeyListener{
 	 * @param args Argumente der Mainmethode
 	 */
 	public static void main(String[] args) {
-		new Variablen();
+		
 		Variablen.flappybird = new MyFlappy();
 		
 	}
